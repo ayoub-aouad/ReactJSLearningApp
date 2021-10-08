@@ -1,0 +1,235 @@
+@import url('https://fonts.googlepis.com/css.family=Poppins:100,200,300,400,500,600,700,800,900&display=swap');
+*
+/* navbar stylesh */
+/* start here  */
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar li a:hover {
+  background-color: #111;
+}
+
+/* end here  */
+
+/* ProductsCard stylesh */
+
+/* Starts Here  */
+.card {
+  position: relative;
+  width: 320px;
+  height: 450px;
+  background: #232323  ;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.card:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #08e686;
+  clip-path: circle(150px at 80%  20%);
+  transition: 0.5s ease-in-out;
+
+}
+.card:hover:before {
+  clip-path: circle(250px at 80%  20%);
+}
+.card:after {
+  content: 'Ayoub';
+  position: absolute;
+  top: 30%;
+  left: -20%;
+  font-size: 12em;
+  font-weight: 800;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.04);
+}
+
+.card .imgbx {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10000;
+  width: 100%;
+  height: 220px;
+}
+.card:hover .imgbx {
+  top: 0%;
+  transform: translateY(0%);
+}
+.card .imgbx img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%) rotate(0deg);
+  width: 270px;
+}
+
+.card .containerbox {
+  position: absolute;
+  bottom: 0;
+  transition: 1s;
+  text-align: center;
+  z-index: 10;
+  width: 100%;
+  height: 100px;
+}
+
+.card:hover .containerbox {
+  
+  height: 210px;
+}
+
+.card .containerbox h2 {
+  position: relative;
+  font-weight:600 ;
+  letter-spacing: 1px;
+  color: aliceblue;
+
+}
+
+.card .containerbox .size,
+.card .containerbox .color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+  transition: 0.5s ;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.card:hover .containerbox .size {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.5s;
+}
+
+.card:hover .containerbox .color {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.6s;
+}
+
+
+
+.card .containerbox .size  h3, 
+.card .containerbox .color h3{
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.card .containerbox .size  span {
+  text-align: center;
+  font-size: 14px;
+  line-height: 26px;
+  width: 26px ;
+  height: 26px;
+  display: inline-block;
+  color: #111;
+  background: #fff;
+  margin: 0 5px;
+  transition: 0.5s;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.card .containerbox .size  span:hover {
+  text-align: center;
+  font-size: 14px;
+  line-height: 26px;
+  width: 26px ;
+  height: 26px;
+  display: inline-block;
+  color: #111;
+  background: #fff;
+  margin: 0 5px;
+  transition: 0.5s;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.card .containerbox .color span  {
+  width: 20px;
+  height: 20px;
+  background:#ff0;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.card .containerbox .color span:nth-child(2) {
+  background:rgb(77, 214, 14);
+}
+
+.card .containerbox .color span:nth-child(3) {
+  background:rgb(24, 93, 195);
+}
+
+.card .containerbox .color span:nth-child(4) {
+  background:rgb(195, 24, 124);
+}
+
+.card .containerbox  a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #fff;
+  border-radius: 4px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  color:#111 ;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.5s;
+}
+
+.card:hover .containerbox  a {
+  opacity: 1;
+  transform: translateY(0px);
+  transition-delay: 0.75s;
+}
+
+/* Ends Here  */
+
+/* blogs Start From Here  */
+
+.blogs-preview {
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid floralwhite;
+}
+
+.blogs-preview :hover {
+  box-shadow: 1px 3px 5px rgb(37, 36, 36);
+}
+
+.blogs-preview h1 {
+  font-size: 20px;
+  color: #08e686;
+  margin-bottom: 8px;
+}
