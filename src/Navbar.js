@@ -5,9 +5,9 @@ const Navbar = () => {
             <div className='links'>
                 <ul>
                     <li><a href="/">Home</a></li>
-                    <li><a href="/">News</a></li>
-                    <li><a href="/">Contact</a></li>
-                    <li><a href="/">About</a></li>
+                    <li><a href="http://localhost:3000/create">Add New Blog</a></li>
+                    <li><a href="/contactus">Contact Us</a></li>
+                    <li><a href="http://localhost:3000/register"><button >Register</button></a></li>
                 </ul>
             </div>
         </nav>

@@ -1,0 +1,28 @@
+{
+  "blogs": [
+    {
+      "id": 1,
+      "author": "Ayoub",
+      "title": "mal l7ayat m3aya",
+      "body": "He is a developper"
+    },
+    {
+      "id": 2,
+      "author": "Ayoubji",
+      "title": "Mbatach Book",
+      "body": "He is a developper"
+    },
+    {
+      "id": 3,
+      "author": "Nouamanji",
+      "title": "M9awda 3lia omakayan ghar entraiment",
+      "body": "He is a Mbatach"
+    },
+    {
+      "id": 4,
+      "author": "Hamza",
+      "title": "Trading fih serf ajammi",
+      "body": "He is a Tala9ha"
+    }
+  ]
+}
